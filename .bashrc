@@ -4,7 +4,7 @@
 
 
 #EVAL
-eval "$(thefuck --alias fuck)"
+#eval "$(thefuck --alias fuck)"
 
 # If not running interactively, don't do anything
 case $- in

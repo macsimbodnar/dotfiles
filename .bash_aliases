@@ -22,7 +22,6 @@ alias set-ass="export ASAN_OPTIONS=detect_leaks=0:halt_on_error=0:strict_string_
 alias unset-ass="unset ASAN_OPTIONS && unset ASAN_ENABLED"
 
 # Load private
-if [ -f ~/.bash_alias_private ]; then
+if [ -f ~/.bash_aliases_private ]; then
     . ~/.bash_aliases_private
 fi
-

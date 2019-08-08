@@ -121,7 +121,7 @@ if ! shopt -oq posix; then
 fi
 
 # Export infer
-export PATH=$PATH:/home/max/programs/infer/infer-linux64-v0.16.0/bin
+# export PATH=$PATH:/home/max/programs/infer/infer-linux64-v0.16.0/bin
 
 unalias gpu-intel
 unalias reloadp

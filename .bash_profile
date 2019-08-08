@@ -123,5 +123,11 @@ fi
 # Export infer
 export PATH=$PATH:/home/max/programs/infer/infer-linux64-v0.16.0/bin
 
+unalias gpu-intel
 unalias reloadp
+unalias python
+unalias gpu-nvidia
+
 alias reloadp="source ~/.bash_profile"
+
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash

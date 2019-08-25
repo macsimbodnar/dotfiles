@@ -1,0 +1,12 @@
+{
+    "explorer.confirmDelete": false,
+    "explorer.autoReveal": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        "**/*.bin": true,
+    },
+    "C_Cpp.formatting": "Disabled",
+    "astyle.astylerc": "/home/max/.astylerc"
+}

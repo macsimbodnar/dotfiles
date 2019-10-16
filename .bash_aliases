@@ -9,8 +9,8 @@ alias aliasp="alias | awk '{ split(\$2,res,\"=\"); print res[1] }'"
 alias reloadp="source ~/.bashrc"
 
 # Code
-alias format="astyle --suffix=none --options=.circleci/.astylerc --recursive *.cpp,*.h | grep ^Formatted"
-alias check-format="astyle --suffix=none --options=.circleci/.astylerc --recursive --dry-run *.cpp,*.h | grep ^Formatted"
+alias format="astyle --suffix=none --options=$HOME/.astylerc --recursive *.cpp,*.h,*.hpp | grep ^Formatted"
+alias check-format="astyle --suffix=none --options=$HOME/.astylerc --recursive --dry-run *.cpp,*.h,*.hpp | grep ^Formatted"
 
 alias fcc="check-format"
 alias fpp="format"

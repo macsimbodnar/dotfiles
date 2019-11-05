@@ -23,6 +23,8 @@ alias unset-ass="unset ASAN_OPTIONS && unset ASAN_ENABLED"
 
 alias scan="clamscan -r --bell -i"
 
+alias penv="source venv/bin/activate"
+
 # Load private
 if [ -f ~/.bash_aliases_private ]; then
     . ~/.bash_aliases_private

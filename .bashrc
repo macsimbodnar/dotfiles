@@ -61,7 +61,7 @@ parse_git_branch() {
 }
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[01;32m\](o)(o):\[\033[01;34m\]\W\[\033[96m\]$(parse_git_branch)\[\e[0;37m\]$ '
+    PS1='\[\033[01;32m\]C:\\\[\033[01;35m\]\W\[\033[96m\]$(parse_git_branch)\[\e[0;37m\]$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -86,6 +86,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+
+    LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 fi
 
 # colored GCC warnings and errors

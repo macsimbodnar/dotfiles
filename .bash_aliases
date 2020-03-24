@@ -12,8 +12,13 @@ alias reloadp="source ~/.bashrc"
 alias format="astyle --suffix=none --options=$HOME/.astylerc --recursive *.cpp,*.h,*.hpp | grep ^Formatted"
 alias check-format="astyle --suffix=none --options=$HOME/.astylerc --recursive --dry-run *.cpp,*.h,*.hpp | grep ^Formatted"
 
+alias local-check-format="astyle --suffix=none --options=./.circleci/.astylerc --recursive --dry-run *.cpp,*.h,*.hpp | grep ^Formatted"
+alias local-format="astyle --suffix=none --options=./.circleci/.astylerc --recursive *.cpp,*.h,*.hpp | grep ^Formatted"
+
 alias fcc="check-format"
 alias fpp="format"
+alias lfcc="local-check-format"
+alias lfpp="local-format"
 
 alias valg="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind-report.txt"
 

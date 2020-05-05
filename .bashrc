@@ -94,7 +94,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -124,3 +124,8 @@ fi
 
 # Export infer
 export PATH=$PATH:~/programs/infer/infer-linux64-v0.16.0/bin
+
+# Setup pyenv
+export PATH="/home/max/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

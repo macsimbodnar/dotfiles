@@ -30,6 +30,12 @@ alias scan="clamscan -r --bell -i"
 
 alias penv="source venv/bin/activate"
 
+alias makes="make clean && make all -j$(getconf _NPROCESSORS_ONLN) && make test -j$(getconf _NPROCESSORS_ONLN)"
+
+alias vasm="~/ws/vasm/vasm6502_oldstyle"
+
+alias sysinfo="neofetch"
+
 # Load private
 if [ -f ~/.bash_aliases_private ]; then
     . ~/.bash_aliases_private

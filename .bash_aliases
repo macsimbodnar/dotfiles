@@ -36,6 +36,8 @@ alias vasm="~/ws/vasm/vasm6502_oldstyle"
 
 alias sysinfo="neofetch"
 
+alias count-dir="ls -l ./ | grep -c ^d"
+
 # Load private
 if [ -f ~/.bash_aliases_private ]; then
     . ~/.bash_aliases_private

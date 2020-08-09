@@ -123,9 +123,12 @@ if ! shopt -oq posix; then
 fi
 
 # Export infer
-export PATH=$PATH:~/programs/infer/infer-linux64-v0.16.0/bin
+# export PATH=$PATH:~/programs/infer/infer-linux64-v0.16.0/bin
 
 # Setup pyenv
-export PATH="/home/max/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PATH="/home/max/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
+# Default editor
+export EDITOR=/usr/bin/vim

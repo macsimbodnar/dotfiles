@@ -2,6 +2,7 @@
 alias gpu-intel="sudo prime-select intel"
 alias gpu-nvidia="sudo prime-select nvidia"
 alias python="python3"
+alias donna="git"
 
 # Shell util
 alias aliase="vim ~/.bash_aliases"

@@ -19,3 +19,7 @@
 	added = green
 	changed = red
 	untracked = cyan
+[pull]
+	rebase = false
+[core]
+	editor = vim

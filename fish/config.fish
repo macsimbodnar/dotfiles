@@ -4,7 +4,7 @@ set -g -x fish_greeting 'Hey cutie'
 ##### Aliases
 
 # Public
-# alias unset="set -e"
+alias pip="pip3"
 alias python="python3"
 alias format="astyle --suffix=none --options=$HOME/.astylerc --recursive '*.cpp,*.h,*.hpp' | grep '^Formatted'"
 alias check-format="astyle --suffix=none --options=$HOME/.astylerc --recursive --dry-run '*.cpp,*.h,*.hpp' | grep '^Formatted'"
@@ -34,6 +34,11 @@ alias vasm="~/ws/vasm/vasm6502_oldstyle"
 alias sysinfo="neofetch"
 
 alias count-dir="ls -l ./ | grep -c ^d"
+
+alias lines-of-code="cloc ."
+
+alias build="rm -rf build && mkdir build && cd build"
+alias rebuild="cd .. && rm -rf build && mkdir build && cd build"
 
 # Sourece non public shit
 if test -e ~/.config/fish/private_config.fish

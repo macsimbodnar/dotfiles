@@ -1,16 +1,17 @@
 ---
 BasedOnStyle: Chromium
-AccessModifierOffset: "-2"
-ColumnLimit: "80"
-IndentWidth: "2"
-AllowShortBlocksOnASingleLine: "true"
-DerivePointerAlignment: "false"
+AccessModifierOffset: -2
+ColumnLimit: 80
+IndentWidth: 2
+AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+DerivePointerAlignment: false
 
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterCaseLabel: false
   AfterClass: true
-  AfterControlStatement: "Never"
+  AfterControlStatement: Never
   AfterEnum: true
   AfterFunction: true
   AfterNamespace: true

@@ -131,3 +131,4 @@ unalias gpu-nvidia
 alias reloadp="source ~/.bash_profile"
 
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+PATH="/usr/local/opt/make/libexec/gnubin:$PATH"

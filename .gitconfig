@@ -1,7 +1,6 @@
 [user]
-	email = max@keyless.io
+	email = macsimbodnar@gmail.com
 	name = Max
-
 [color]
 	branch = auto
 	diff = auto
@@ -23,3 +22,5 @@
 	rebase = false
 [credential]
 	helper = store
+[core]
+	editor = vim

@@ -1,0 +1,24 @@
+[audio]
+pavucontrol
+
+[network]
+nm-connection-editor
+
+[display]
+xrandr --output eDP-1 --pos 0x1080
+xrandr --output DP-1 --pos 0x0
+
+[picom]
+picom --backend=glx --vsync=true
+vim .config/picom.conf 
+shadow = false;
+fading = false;
+backend = "glx";
+vsync = true;
+
+[i3]
+i3lock
+
+[i3]
+mediakey
+xmode

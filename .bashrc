@@ -132,4 +132,4 @@ fi
 
 # Default editor
 export EDITOR=/usr/bin/vim
-. "$HOME/.cargo/env"
+source "$HOME/.cargo/env"

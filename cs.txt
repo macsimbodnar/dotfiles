@@ -22,3 +22,6 @@ i3lock
 [i3]
 mediakey
 xmode
+
+[brightness]
+xrandr --output eDP-1 --brightness 0.8

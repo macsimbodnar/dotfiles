@@ -18,10 +18,9 @@ vsync = true;
 
 [i3]
 i3lock
-
-[i3]
-mediakey
-xmode
+i3-msg reload && i3-msg restart
+exec --no-startup-id rofi -show run
 
 [brightness]
 xrandr --output eDP-1 --brightness 0.8
+

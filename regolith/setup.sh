@@ -13,7 +13,7 @@ sudo apt-get install -y i3xrocks-rofication i3xrocks-cpu-usage i3xrocks-memory i
 
 # Set the bar order
 pushd /etc/regolith/i3xrocks/conf.d
-sudo mv *_setup 01_setup
+# sudo mv *_setup 01_setup
 sudo mv *_rofication 40_rofication
 sudo mv *_cpu-usage 50_cpu-usage
 sudo mv *_memory 60_memory

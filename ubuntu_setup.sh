@@ -112,14 +112,8 @@ popd 1> /dev/null
 ###############################################################################
 msg INF "Configuring regolith"
 
-
-
-
-###############################################################################
-msg INF "Configuring the look"
-
-# Set the Gnome theme
-/usr/bin/gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-
-
+pushd ~/ws/dotfiles/regolith 1> /dev/null
+chmod +x setup.sh 1> /dev/null
+./setup.sh 1> /dev/null
+popd 1> /dev/null
 

@@ -1,6 +1,6 @@
 #define gtk_theme           Yaru-dark
 #define icon_theme          Yaru
-#define desktop_wallpaper   ubuntu-default-greyscale-wallpaper.png
+#define desktop_wallpaper   /usr/share/backgrounds/ubuntu-default-greyscale-wallpaper.png
 #define rofi_theme          /etc/regolith/styles/maxtron/rofi.rasi
 #define theme_terminal_scrollbar never
 

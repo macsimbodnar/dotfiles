@@ -9,5 +9,5 @@ cp -r $FISH_CONF_DIR $FISH_CONF_DIR.backup
 rm -rf $FISH_CONF_DIR/config.fish $FISH_CONF_DIR/fish_variables $FISH_CONF_DIR/functions
 
 ln -s functions $FISH_CONF_DIR/functions
-ln -s config.fish $FISH_CONF_DIR/functions
+ln -s config.fish $FISH_CONF_DIR/config.fish
 ln -s fish_variables $FISH_CONF_DIR/fish_variables

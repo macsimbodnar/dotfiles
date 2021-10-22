@@ -1,13 +1,13 @@
-regolith.look: midnight	
+regolith.look: maxtron	
 
 ! -- Styles - Colors
-#include "/etc/regolith/styles/midnight/color"
+#include "/etc/regolith/styles/maxtron/color"
 
 ! -- Styles - Fonts
-#include "/etc/regolith/styles/midnight/typeface"
+#include "/etc/regolith/styles/maxtron/typeface"
 
 ! -- Styles - Theme
-#include "/etc/regolith/styles/midnight/theme"
+#include "/etc/regolith/styles/maxtron/theme"
 
 ! -- Applications
 ! These files map values defined above into specific app settings.

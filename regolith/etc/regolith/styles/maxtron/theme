@@ -1,7 +1,6 @@
 #define gtk_theme           Yaru-dark
 #define icon_theme          Yaru
-#define desktop_wallpaper   /usr/share/backgrounds/regolith-matt-mcnulty-nyc-2nd-ave.jpg
-#define rofi_theme          /etc/regolith/styles/midnight/rofi.rasi
+#define rofi_theme          /etc/regolith/styles/maxtron/rofi.rasi
 #define theme_terminal_scrollbar never
 
 #define i3wm_window_border_size         2

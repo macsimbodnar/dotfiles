@@ -42,7 +42,7 @@ backup() {
 
 
 ###############################################################################
-TO_INSTALL="build-essential clang-13 vim ninja-build clang-format git tig fish regolith-desktop-mobile firefox"
+TO_INSTALL="build-essential clang-13 vim ninja-build clang-format git tig fish regolith-desktop-mobile firefox python3-pip"
 ME=$USER
 
 
@@ -116,4 +116,9 @@ pushd ~/ws/dotfiles/regolith 1> /dev/null
 chmod +x setup.sh 1> /dev/null
 ./setup.sh 1> /dev/null
 popd 1> /dev/null
+
+
+
+
+
 

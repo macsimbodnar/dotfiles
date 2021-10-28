@@ -1,7 +1,7 @@
 #### Wellcome message
 set -g -x fish_greeting 'Hey cutie'
 
-set -eg EDITOR vim
+set -g EDITOR vim
 
 ##### Aliases
 

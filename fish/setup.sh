@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-FISH_RELATIVE_PATH='~/.config/fish'
+FISH_RELATIVE_PATH=~/.config/fish
 
 # Create a directory if not exists
 mkdir -p $FISH_RELATIVE_PATH

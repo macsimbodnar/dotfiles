@@ -18,7 +18,7 @@ sudo apt-get autoremove -y -qq i3xrocks-next-workspace i3xrocks-net-traffic 1> /
 pushd /etc/regolith/i3xrocks/conf.d
 
 # Remove the unwanted
-rm -f *_next-workspace *_net-traffic
+sudo rm -f *_next-workspace *_net-traffic
 
 # sudo mv *_setup 01_setup
 sudo mv -n *_rofication 40_rofication

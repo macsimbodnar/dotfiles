@@ -42,7 +42,7 @@ backup() {
 
 
 ###############################################################################
-if [ "$EUID" -ne 0 ]; then
+if [[ $(id -u) -eq 0 ]]; then
   msg ERR "Don't execute this script as root"
   exit
 fi

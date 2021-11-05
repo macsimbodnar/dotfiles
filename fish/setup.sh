@@ -1,6 +1,11 @@
 #!/bin/sh -e
 
-FISH_CONF_DIR=$(realpath ~/.config/fish)
+FISH_RELATIVE_PATH='~/.config/fish'
+
+# Create a directory if not exists
+mkdir -p $FISH_RELATIVE_PATH
+
+FISH_CONF_DIR=$(realpath $FISH_RELATIVE_PATH)
 
 # Backup the dir
 cp -r $FISH_CONF_DIR $FISH_CONF_DIR.backup

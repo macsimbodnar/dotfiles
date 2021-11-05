@@ -12,7 +12,7 @@ sudo apt-get install -y -qq i3xrocks-rofication i3xrocks-cpu-usage i3xrocks-memo
 # i3xrocks-todo
 
 # Remove the unused one
-sudo apt autoremove -y -qq i3xrocks-next-workspace i3xrocks-net-traffic 1> /dev/null
+sudo apt-get autoremove -y -qq i3xrocks-next-workspace i3xrocks-net-traffic 1> /dev/null
 
 # Set the bar order
 pushd /etc/regolith/i3xrocks/conf.d

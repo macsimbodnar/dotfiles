@@ -3,10 +3,6 @@
 # Backup
 sudo cp -r /etc/regolith /etc/regolith.backup
 
-# Set the theme
-sudo cp -r etc/regolith/styles/maxtron /etc/regolith/styles/
-regolith-look set maxtron
-
 # Install bar deps
 sudo apt-get install -y -qq i3xrocks-rofication i3xrocks-cpu-usage i3xrocks-memory i3xrocks-disk-capacity i3xrocks-battery i3xrocks-time 1> /dev/null
 # i3xrocks-todo
@@ -29,3 +25,8 @@ sudo mv -n *_battery 80_battery
 # sudo mv -n *_todo 85_todo
 sudo mv -n *_time 90_time
 popd
+
+# Set the theme
+sudo cp -r etc/regolith/styles/maxtron /etc/regolith/styles/
+regolith-look set maxtron
+regolith-look refresh 1> /dev/null

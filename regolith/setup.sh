@@ -29,4 +29,4 @@ popd
 # Set the theme
 sudo cp -r etc/regolith/styles/maxtron /etc/regolith/styles/
 regolith-look set maxtron
-regolith-look refresh 1> /dev/null
+# regolith-look refresh 1> /dev/null

@@ -126,8 +126,11 @@ chmod +x setup.sh 1> /dev/null
 ./setup.sh 1> /dev/null
 popd 1> /dev/null
 
+msg WAR "After reboot run: regolith-look refresh"
 
 
 
+
+###############################################################################
 
 

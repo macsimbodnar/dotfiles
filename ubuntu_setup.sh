@@ -50,8 +50,8 @@ ME=$USER
 
 ###############################################################################
 msg INF "Updating the system"
-sudo apt-get -qq update
-sudo apt-get -qq upgrade
+sudo apt-get -qq update 1> /dev/null
+sudo apt-get -qq upgrade 1> /dev/null
 
 
 
@@ -65,7 +65,7 @@ sudo add-apt-repository -qq -y ppa:regolith-linux/release 1> /dev/null
 
 ###############################################################################
 msg INF "Installing programs"
-sudo apt-get install -qq -y $TO_INSTALL
+sudo apt-get install -qq -y $TO_INSTALL 1> /dev/null
 
 msg INF "Replacing snap garbage"
 sudo snap remove firefox 1> /dev/null

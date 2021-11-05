@@ -8,7 +8,7 @@ sudo cp -r etc/regolith/styles/maxtron /etc/regolith/styles/
 regolith-look set maxtron
 
 # Install bar deps
-sudo apt-get install -y -qq i3xrocks-rofication i3xrocks-cpu-usage i3xrocks-memory i3xrocks-disk-capacity i3xrocks-battery i3xrocks-time
+sudo apt-get install -y -qq i3xrocks-rofication i3xrocks-cpu-usage i3xrocks-memory i3xrocks-disk-capacity i3xrocks-battery i3xrocks-time 1> /dev/null
 # i3xrocks-todo
 
 # Set the bar order

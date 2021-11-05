@@ -58,7 +58,7 @@ sudo apt-get -qq upgrade 1> /dev/null
 
 ###############################################################################
 msg INF "Configuring additional repositories"
-sudo add-apt-repository -qq -y ppa:regolith-linux/release 1> /dev/null
+sudo add-apt-repository -y ppa:regolith-linux/release 1> /dev/null
 
 
 

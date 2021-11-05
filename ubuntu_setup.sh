@@ -42,6 +42,15 @@ backup() {
 
 
 ###############################################################################
+if [ "$EUID" -ne 0 ]; then
+  msg ERR "Don't execute this script as root"
+  exit
+fi
+
+
+
+
+###############################################################################
 TO_INSTALL="build-essential clang-13 vim ninja-build clang-format git tig fish regolith-desktop-mobile firefox python3-pip"
 ME=$USER
 

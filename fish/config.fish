@@ -35,7 +35,13 @@ alias rebuild="cd .. && rm -rf build && mkdir build && cd build"
 alias do-tar="tar -czf"
 alias undo-tar="tar -xzf"
 
-# Sourece non public shit
+# Source non public shit
 if test -e ~/.config/fish/private_config.fish
     source ~/.config/fish/private_config.fish
+end
+
+
+# pyenv init
+if command -v pyenv 1>/dev/null 2>&1
+  pyenv init - | source
 end

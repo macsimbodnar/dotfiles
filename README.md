@@ -1,6 +1,16 @@
 # My dot files
 
 
+## Claude Code
+
+Global rules loaded at the start of every session, in every project.
+
+### To configure Claude Code:
+* `mkdir -p ~/.claude`
+* `ln -s ~/ws/dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md`
+
+Verify with `/context` in a session — `CLAUDE.md` should appear under **Memory files**.
+
 ## Vim
 
 ### To configure vim:

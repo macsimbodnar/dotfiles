@@ -2,12 +2,11 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:vim
 SETUVAR __fish_initialized:4300
+SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x231
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x60help\x60\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
-SETUVAR fish_user_paths:/Users/max/\x2elocal/bin\x1e/Users/max/Library/Android/sdk/platform\x2dtools\x1e/home/max/\x2elocal/bin\x1e/home/max/AndroidStudio/android\x2dstudio\x2d2021\x2e3\x2e1\x2e16\x2dlinux/android\x2dstudio/bin
+SETUVAR fish_user_paths:/Users/max/\x2elocal/bin\x1e/Users/max/Library/Android/sdk/platform\x2dtools\x1e/home/max/\x2elocal/bin\x1e/home/max/AndroidStudio/android\x2dstudio\x2d2021\x2e3\x2e1\x2e16\x2dlinux/android\x2dstudio/bin\x1e/opt/homebrew/opt/llvm/bin
 SETUVAR nvm_default_version:24
-SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x231
-# SETUVAR fish_user_paths:/usr/local/go/bin\x1e/home/max/\x2elocal/bin\x1e/home/max/AndroidStudio/android\x2dstudio\x2d2021\x2e3\x2e1\x2e16\x2dlinux/android\x2dstudio/bin

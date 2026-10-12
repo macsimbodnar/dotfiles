@@ -45,3 +45,11 @@ end
 if command -v pyenv 1>/dev/null 2>&1
   pyenv init - | source
 end
+
+# Claude Code config split: desktop app -> ~/.claude-work,
+# everything else (CLI) -> default ~/.claude
+if test "$__CFBundleIdentifier" = "com.anthropic.claudefordesktop"
+    set -gx CLAUDE_CONFIG_DIR $HOME/.claude-work
+else if set -q CLAUDE_CONFIG_DIR
+    set -e CLAUDE_CONFIG_DIR
+end

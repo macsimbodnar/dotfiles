@@ -18,6 +18,11 @@ anything it replaces is kept as `<name>.bak.<timestamp>`.
 Verify with `/context` in a session — `CLAUDE.md` should appear under **Memory files**.
 
 ### Status line
+Wide terminal (about 120+ columns): one line, context left, usage right.
+```
+Opus 5.5 · dotfiles ⎇ master* · ctx ███████░░░ 68% 136k/200k      5h ████│░░░░░ 41% ↻18:40   7d ██░░│░░░░░ 22% ↻Thu 09:00
+```
+Narrow terminal: two lines.
 ```
 Opus 5.5 · dotfiles ⎇ master* · ctx ███████░░░ 68% 136k/200k
 5h ████│░░░░░ 41% ↻18:40   7d ██░░│░░░░░ 22% ↻Thu 09:00

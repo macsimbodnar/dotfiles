@@ -5,6 +5,9 @@
 #   Opus 5.5 · dotfiles ⎇ master* · ctx ███████░░░ 68% 136k/200k
 #   5h ████│░░░░░ 41% ↻18:40   7d ██░░│░░░░░ 22% ↻Thu 09:00
 #
+# One line (context left, usage right-aligned) when the terminal is wide
+# enough, else the two lines above.
+#
 # Bars: green <60%, yellow <80%, red >=80%. The │ marks even pacing: where usage
 # would be if spread evenly over the window. Fill past it = burning too fast.
 # Must stay bash 3.2 compatible (macOS /bin/bash).
@@ -105,9 +108,26 @@ fi
 tokens=""
 [ -n "$ctx_used" ] && [ -n "$ctx_size" ] && tokens=" ${DIM}${ctx_used}/${ctx_size}${RESET}"
 
-printf '%s%s%s · %s%s%s%s · ctx %s %s%s\n' \
+left=$(printf '%s%s%s · %s%s%s%s · ctx %s %s%s' \
     "$CYAN" "$model" "$RESET" "$BLUE" "$dir" "$RESET" "$git_part" \
-    "$(bar "$ctx_pct")" "$(pct_label "$ctx_pct")" "$tokens"
-printf '%s   %s\n' \
+    "$(bar "$ctx_pct")" "$(pct_label "$ctx_pct")" "$tokens")
+right=$(printf '%s   %s' \
     "$(limit 5h "$h_pct" "$h_pace" "$h_reset")" \
-    "$(limit 7d "$w_pct" "$w_pace" "$w_reset")"
+    "$(limit 7d "$w_pct" "$w_pace" "$w_reset")")
+
+# Columns on screen: drop ANSI codes, then count only UTF-8 lead bytes, so the
+# result does not depend on the locale bash or wc run under.
+vis_width() {
+    printf '%s' "$1" | LC_ALL=C sed $'s/\033\\[[0-9;]*m//g' | LC_ALL=C tr -d '\200-\277' | wc -c
+}
+
+# COLUMNS is the full terminal width, but Claude Code indents the status line,
+# so keep a margin or the right side wraps. No COLUMNS (manual run) = two lines.
+margin=4
+min_gap=3
+gap=$(( ${COLUMNS:-0} - margin - $(vis_width "$left") - $(vis_width "$right") ))
+if [ "$gap" -ge "$min_gap" ]; then
+    printf '%s%*s%s\n' "$left" "$gap" "" "$right"
+else
+    printf '%s\n%s\n' "$left" "$right"
+fi

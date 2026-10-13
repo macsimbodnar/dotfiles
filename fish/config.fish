@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/max/.docker/bin"
+# End of Docker Desktop section.
+
 #### Wellcome message
 set -g -x fish_greeting 'Hey cutie'
 
@@ -46,10 +50,10 @@ if command -v pyenv 1>/dev/null 2>&1
   pyenv init - | source
 end
 
-# Claude Code config split: desktop app -> ~/.claude-work,
+# Claude Code config split: desktop app -> ~/.claude-gracex,
 # everything else (CLI) -> default ~/.claude
-if test "$__CFBundleIdentifier" = "com.anthropic.claudefordesktop"
-    set -gx CLAUDE_CONFIG_DIR $HOME/.claude-work
+if test "$__CFBundleIdentifier" = "com.anthropic.claudefordesktop"; or set -q CLAUDE_DESKTOP_RESOLVING_ENVIRONMENT
+    set -gx CLAUDE_CONFIG_DIR $HOME/.claude-gracex
 else if set -q CLAUDE_CONFIG_DIR
     set -e CLAUDE_CONFIG_DIR
 end
